@@ -10,7 +10,7 @@
     "autoDelete": false,
     "autoDownload": false,
     "ignore": [
-        ".git",
+        "/.git",
         "/.vscode"
     ]
 }
