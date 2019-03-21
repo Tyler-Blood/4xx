@@ -48,11 +48,6 @@ function initializeApplication() {
 
 
     displayPB();
-    // for (i=0; i <= 100; i++) {
-    //     setTimeout(displayPB2(i), 50);
-    // }
-    // applicationUserInterface();
-
 }
 
 var timerCount = 0;
@@ -66,15 +61,12 @@ function displayPB(){
         setTimeout(displayPB, 50);
     } else{
         timerCount = 0;
-        applicationUserInterface();
         return false;
     }
 }
 
-// function displayPB2(i){
-//     var x = (timerCount < 25) ? '' : (timerCount < 45) ? timerCount + '%' : (timerCount < 65) ? 'Loading ' + timerCount + '%' : 'Loading Application' + timerCount + '%';
-//     document.getElementById("loaderProgressBar").innerHTML = x;
-//     document.getElementById('loaderProgressBar').setAttribute('aria-valuenow', i);
-//     document.getElementById('loaderProgressBar').style.width = i + '%    ';
+function formLogin() {
 
-// }
+}
+
+
