@@ -71,20 +71,7 @@ function displayPB(){
 
 // start step-402
 function formLogin(){
-    return `<form id="loginFrm" name="loginFrm" action="#" class="animated zoomIn">
-        <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" value="me@there.com">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" value="dfdf">
-        </div>
-        <div class="form-check"><label class="form-check-label">
-            <input class="form-check-input" type="checkbox">Remember me </label>
-        </div>
-        <button id="loginBtn" type="submit" class="btn btn-primary" onclick="validateLogin()">Submit</button>
-    </form>`;
+    return '<form id="loginFrm" name="loginFrm" action="#" class="animated zoomIn"><div class="form-group"><label for="email">Email address:</label><input type="email" class="form-control" id="email"value="me@there.com"></div><div class="form-group"><label for="pwd">Password:</label><input type="password" class="form-control" id="pwd" value="dfdf"></div><div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">Remember me </label></div><button id="loginBtn" type="submit" class="btn btn-primary" onclick="validateLogin()">Submit</button></form>';
 }
 
 
