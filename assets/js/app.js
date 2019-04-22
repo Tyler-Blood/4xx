@@ -96,11 +96,21 @@ function applicationUserInterface() {
     document.body.style.backgroundColor = '#fff';
     document.body.innerHTML = header + main + footer;
     var links = document.getElementsByTagName('a');
-    // for (var i = 0; i < links.length; i++) links[i].onclick = function () {
-    //     linkClicked(this);
-    // }
+    for (var i = 0; i < links.length; i++) {
+        links[i].onclick = function(){
+        linkClicked(this);
+        };
+    }
     var link = document.querySelectorAll('.nav-link');
-    links.forEach(link => link.addEventListener('click', linkClicked(this)));
+    // links.forEach(link => link.addEventListener('click', linkClicked(this)));
+    // links.forEach(link.addEventListener('click', link => linkClicked(this)));
+    // links.forEach(link.onclick = link => linkClicked(this));
+    // links.forEach(links.onclick = function(){
+    //     linkClicked(this);
+    // });
+    // links.forEach(links.onclick = () => {
+    //     linkClicked(this);
+    // });
 }
 
 function buildMenu() {
